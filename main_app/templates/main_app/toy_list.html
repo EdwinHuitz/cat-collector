@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <h1>Toy List</h1>
+
 {% for toy in toy_list %}
   <a href="{% url 'toys_detail' toy.id %}">
     <div class="card">
@@ -11,4 +13,5 @@
     </div>
   </a>
 {% endfor %}
+
 {% endblock %}
